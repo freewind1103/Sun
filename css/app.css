@@ -1,0 +1,135 @@
+/* Your CSS gone here */
+
+.frame{
+	height: 500px;
+	width: 800px;
+	background-color: #fff;
+	border: 10px double #cccccc;
+	margin: 20px 260px;
+	overflow: hidden;
+}
+
+.frame > .sky{
+	background-color: #ffcc33;
+	height: 500px;
+}
+
+.frame > .mountain{
+	width: 0px;
+	height: 0px;
+	border: 250px solid transparent;
+	border-bottom: 250px solid #22b573;
+	position: relative;
+  	top: -600px;
+  	right: -162px;
+}
+
+.frame > .mountain::after{
+	content: "";
+  	width: 0px;
+  	height: 0px;
+  	border: 300px solid transparent;
+  	border-bottom: 300px solid #006837;
+  	position: relative;
+  	top: -103px;
+  	right: 152px;
+}
+
+.frame > .mountain::before{
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 500px solid transparent;
+	border-bottom: 500px solid #006837;
+	position: relative;
+  	top: -85px;
+  	right: -148px;
+}
+
+.frame > .sun{
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+	padding: 66px;
+	display: inline-block;
+	position: relative;
+}
+
+
+.sun-morning{
+	border: 10px solid #fcb530;
+	background: #f8912b;
+	top: -173px;
+  	right: -173px;
+}
+
+.frame > .sun-morning::before{
+	content:"";
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-radius: 100px;
+	border: 10px solid #f47027;
+	padding: 45px;
+	background: #f15a24;
+	position: relative;
+	top: -55px;
+  	right: 55px;
+}
+
+.sun-afternoon{
+	background: #9de6e6 ;
+	border: 10px solid #5cd6d6 ;
+	top: -390px ;
+  	right: -407px ;
+}
+
+.sun-afternoon::before{
+	content:"";
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-radius: 100px;
+	border: 10px solid #d8f5f5;
+	padding: 45px;
+	background: #fff;
+	position: relative;
+	top: -55px;
+  	right: 55px;
+}
+
+.sun-evening {
+	background: #e54949 ;
+	border: 10px solid #f57a7a ;
+	top: -160px ;
+  	right: -613px ;
+}
+
+.sun-evening::before{
+	content:"";
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-radius: 100px;
+	border: 10px solid #d61d1d;
+	padding: 45px;
+	background: #cc0000;
+	position: relative;
+	top: -55px;
+  	right: 55px;
+}
+
+.timesheet{
+	text-align: center;
+}
+
+.timesheet a{
+	color: #999999;
+	text-decoration: none;
+	padding-left: 30px;
+}
+
+.active{
+	color: #0066cc !important;
+}
+
